@@ -4,6 +4,7 @@
 	import { browser } from '$app/env';
 	import { goto } from '$app/navigation';
 
+	// Whether the app is running in the browser or on the server.
 	if (browser) {
 		$session = supabase.auth.session();
 		setTimeout(() => ($session ? goto('/') : goto('/signup')));

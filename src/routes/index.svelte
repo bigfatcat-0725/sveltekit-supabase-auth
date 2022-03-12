@@ -23,12 +23,14 @@
 	};
 </script>
 
-{#await getRooms()}
+<!-- {#await getRooms()}
 	Loading..
 {:then response}
 	<pre>{JSON.stringify(response, null, 2)}</pre>
-{/await}
+{/await} -->
 <input bind:value={room} />
 <button on:click={addRoom}>Add Room</button>
 <button on:click={signUp}>Sign Up</button>
 <button on:click={signOut}>Sign Out</button>
+
+<a href="/signin"><h1>여기로 가세요</h1></a>

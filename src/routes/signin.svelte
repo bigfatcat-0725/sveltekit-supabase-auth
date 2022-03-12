@@ -8,6 +8,7 @@
 			email,
 			password
 		});
+		console.log(session);
 		if (error) alert(error.message);
 	};
 </script>
@@ -19,5 +20,6 @@
 	<input bind:value={password} id="password" type="password" />
 	<button>Sign In</button>
 </form>
-<a href="/signin">Need an account?</a>
+
+<a href="/signup">Need an account?</a>
 <a href="/magic">Want a magic link?</a>
